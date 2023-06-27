@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: "jpa-test"
+  datasource:
+#    url: jdbc:mysql://localhost:3306/test
+#    username: root
+#    password: 12420104Xq
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:h2:mem:testdb;MODE=LEGACY
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
+server:
+  port: 8080
+
+
+
